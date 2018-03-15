@@ -1,0 +1,40 @@
+.ImageViewer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ImageViewer-backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+}
+
+.ImageViewer-body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImageViewer-img {
+    will-change: transform;
+    position: absolute;
+}
+
+.ImageViewer-img.animating {
+    transition: transform .4s ease-in-out 0s;
+}
+
+.ImageViewer-loading {
+    color: #fff;
+}
